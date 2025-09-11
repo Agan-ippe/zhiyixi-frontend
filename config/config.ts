@@ -58,6 +58,13 @@ export default defineConfig({
    * @doc 代理配置 https://umijs.org/docs/api/config#proxy
    */
   proxy: proxy[REACT_APP_ENV as keyof typeof proxy],
+  // proxy: {
+  //   '/api': {
+  //     'target': 'http://jsonplaceholder.typicode.com/',
+  //     'changeOrigin': true,
+  //     'pathRewrite': { '^/api' : '' },
+  //   }
+  // },
   /**
    * @name 快速热更新配置
    * @description 一个不错的热更新组件，更新时可以保留 state
