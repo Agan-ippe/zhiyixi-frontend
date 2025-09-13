@@ -24,7 +24,7 @@ const Admin: React.FC = () => {
             textAlign: 'center',
           }}
         >
-          <SmileTwoTone /> Ant Design Pro{' '}
+          <SmileTwoTone /> 智易析智能 BI 平台{' '}
           <HeartTwoTone twoToneColor="#eb2f96" /> You
         </Typography.Title>
       </Card>
