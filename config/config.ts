@@ -152,7 +152,8 @@ export default defineConfig({
   openAPI: [
     {
       requestLibPath: "import { request } from '@umijs/max'",
-      schemaPath: 'http://localhost:8101/api/v2/api-docs',
+      schemaPath:
+        'http://localhost:8101/api/v2/api-docs?group=%E9%BB%98%E8%AE%A4%E5%88%86%E7%BB%84',
       projectName: 'zhibi',
       mock: false,
     },

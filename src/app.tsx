@@ -52,6 +52,9 @@ export const layout: RunTimeLayoutConfig = ({
 }) => {
   return {
     actionsRender: () => [<Question key="doc" />],
+    /**
+     * 头像
+     */
     avatarProps: {
       src: initialState?.currentUser?.userAvatar,
       title: <AvatarName />,
@@ -59,8 +62,11 @@ export const layout: RunTimeLayoutConfig = ({
         return <AvatarDropdown>{avatarChildren}</AvatarDropdown>;
       },
     },
+    /**
+     * 水印
+     */
     waterMarkProps: {
-      content: initialState?.currentUser?.name,
+      content: initialState?.currentUser?.userName,
     },
     footerRender: () => <Footer />,
     onPageChange: () => {
