@@ -54,6 +54,8 @@ const chartAdd: React.FC = () => {
       file: undefined,
     };
     setSubmitting(true);
+    setChart(undefined);
+    setOption(undefined);
     // console.log("提交结果：", values);
     try {
       const res = await aiGenerateChartUsingPost(
@@ -81,7 +83,7 @@ const chartAdd: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="chart-add">
       <Row gutter={24}>
         {/*提交数据*/}
         <Col span={12}>
@@ -169,13 +171,13 @@ const chartAdd: React.FC = () => {
               {chart?.genResult ?? <Empty description={false} />}
             </Card>
             <Card title="可视化图表" hoverable={true}>
-              <Watermark content={currentUser?.userName}>
-                {option ? (
+              {option ? (
+                <Watermark content={currentUser?.userName}>
                   <ReactECharts option={option} />
-                ) : (
-                  <Empty description={false} />
-                )}
-              </Watermark>
+                </Watermark>
+              ) : (
+                <Empty description={false} />
+              )}
             </Card>
           </Space>
         </Col>
