@@ -5,7 +5,19 @@ export default [
     routes: [{ name: '登录', path: '/user/login', component: './user/login' }],
   },
   { path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome' },
-  { path: '/chart/add', name: '添加', icon: 'plus', component: './chart/add' },
+  {
+    path: '/chart/add',
+    name: '智能分析',
+    icon: 'barChart',
+    component: './chart/add',
+  },
+  {
+    path: '/chart/history',
+    name: '历史记录',
+    icon: 'clockCircle',
+    component: './chart/history',
+  },
+
   {
     path: '/admin',
     name: '管理页',
