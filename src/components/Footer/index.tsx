@@ -11,9 +11,15 @@ const Footer: React.FC = () => {
       copyright="知莫"
       links={[
         {
-          key: '智易析智能 BI 平台',
-          title: '智易析智能 BI 平台',
-          href: 'https://pro.ant.design',
+          key: '知云图床',
+          title: '知云图床',
+          href: '',
+          blankTarget: true,
+        },
+        {
+          key: '知莫AI超级智慧体',
+          title: '知莫AI超级智慧体',
+          href: '',
           blankTarget: true,
         },
         {
@@ -23,9 +29,9 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: '编程学习圈子',
+          title: '编程学习圈子',
+          href: 'https://www.codefather.cn/',
           blankTarget: true,
         },
       ]}
