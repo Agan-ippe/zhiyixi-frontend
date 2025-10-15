@@ -68,7 +68,6 @@ const chartHistory: React.FC = () => {
           }}
         />
       </div>
-      {/*原子css*/}
       <div className="margin-16"></div>
       {/*数据展示*/}
       <List
